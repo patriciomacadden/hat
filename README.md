@@ -1,4 +1,3 @@
-hat
-===
+# HAT
 
-Hobbit Application Template
+Hobbit Application Template.
