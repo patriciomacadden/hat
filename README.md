@@ -1,0 +1,4 @@
+hat
+===
+
+Hobbit Application Template
