@@ -2,6 +2,7 @@ require 'securerandom'
 
 module HAT
   class Application < Hobbit::Base
+    Dir[File.join('config', 'initializers', '**/*.rb')].each { |file| require File.expand_path(file) }
     Dir[File.join('app', 'controllers', '**/*.rb')].each { |file| require File.expand_path(file) }
     Dir[File.join('app', 'models', '**/*.rb')].each { |file| require File.expand_path(file) }
 
@@ -13,3 +14,4 @@ module HAT
     map('/') { run RootController.new }
   end
 end
+

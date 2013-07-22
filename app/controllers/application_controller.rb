@@ -11,3 +11,4 @@ class HAT::ApplicationController < HAT::Application
     "app/views/layouts/#{template}.#{template_engine}"
   end
 end
+

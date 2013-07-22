@@ -7,3 +7,4 @@ class HAT::RootController < HAT::ApplicationController
     render 'index', {}, layout: 'application'
   end
 end
+
