@@ -9,6 +9,8 @@ gem 'slim'
 gem 'thin'
 
 group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'rake'
 end
 
