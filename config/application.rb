@@ -15,4 +15,3 @@ module HAT
     map('/') { run RootController.new }
   end
 end
-

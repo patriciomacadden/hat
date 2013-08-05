@@ -18,4 +18,3 @@ group :test do
   gem 'minitest', require: 'minitest/autorun'
   gem 'rack-test', require: 'rack/test'
 end
-

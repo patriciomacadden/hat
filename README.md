@@ -37,4 +37,3 @@ there.
 ## License
 
 See the [LICENSE](https://github.com/patriciomacadden/hat/blob/master/LICENSE).
-

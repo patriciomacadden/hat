@@ -1,10 +1,9 @@
 class HAT::RootController < HAT::ApplicationController
-  def view_path(template)
-    "app/views/root/#{template}.#{template_engine}"
+  def views_path
+    'app/views/root'
   end
 
   get '/' do
-    render 'index', {}, layout: 'application'
+    render 'index'
   end
 end
-
