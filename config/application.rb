@@ -10,7 +10,13 @@ module HAT
     use Rack::Session::Cookie, secret: SecureRandom.hex(64)
     # must be used after Rack::Session::Cookie
     use Rack::Protection, except: :http_origin
-    use Rack::Static, root: 'public', urls: ['/images', '/javascripts', '/stylesheets']
+
+    map '/assets' do
+      environment = Sprockets::Environment.new
+      environment.append_path 'app/assets/javascripts'
+      environment.append_path 'app/assets/stylesheets'
+      run environment
+    end
 
     map('/') { run RootController.new }
   end

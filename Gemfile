@@ -5,7 +5,10 @@ gem 'hobbit', github: 'patriciomacadden/hobbit'
 gem 'hobbit-contrib', github: 'patriciomacadden/hobbit-contrib', require: 'hobbit/contrib'
 gem 'i18n'
 gem 'rack-protection'
+# Uncomment this if you want to use Sass
+#gem 'sass'
 gem 'slim'
+gem 'sprockets'
 gem 'thin'
 
 group :development do
