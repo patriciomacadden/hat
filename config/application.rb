@@ -1,4 +1,7 @@
+require 'bundler'
 require 'securerandom'
+
+Bundler.require :default, ENV['RACK_ENV'].to_sym
 
 module HAT
   class Application < Hobbit::Base
