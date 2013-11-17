@@ -7,7 +7,6 @@ gem 'i18n'
 gem 'rack-protection'
 # Uncomment this if you want to use Sass
 #gem 'sass'
-gem 'slim'
 gem 'sprockets'
 gem 'thin'
 

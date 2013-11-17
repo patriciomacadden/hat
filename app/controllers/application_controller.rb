@@ -6,8 +6,4 @@ class HAT::ApplicationController < HAT::Application
   def layouts_path
     'app/views/layouts/'
   end
-
-  def template_engine
-    'slim'
-  end
 end
