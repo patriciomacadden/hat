@@ -1,5 +1,4 @@
 class HAT::ApplicationController < HAT::Application
-  include Hobbit::AssetTag
   include Hobbit::Render
   include Hobbit::Session
 
