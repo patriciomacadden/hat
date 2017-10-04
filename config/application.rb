@@ -7,7 +7,7 @@ module HAT
   class Application < Hobbit::Base
     Dir[File.join('config', 'initializers', '**/*.rb')].each { |file| require File.expand_path(file) }
 
-    Dir[File.join('app', 'controllers', '**/*.rb')].each { |file| require File.expand_path(file) }
+    controller_files = Dir[File.join('app', 'controllers', '**/*.rb')]
     app_controller = controller_files.detect { |file| file.match %r|application_controller| }
     controller_files.delete(app_controller)
     controller_files.unshift(app_controller)
